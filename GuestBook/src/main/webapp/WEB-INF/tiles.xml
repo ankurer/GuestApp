@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="BaseLayout" template="/WEB-INF/pages/BaseLayout.jsp">
+        <put-attribute name="header" value="/WEB-INF/pages/Header.jsp" />
+         <put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp" /> 
+        <put-attribute name="body" value="/WEB-INF/pages/Body.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/pages/Footer.jsp" />
+    </definition>
+    
+    <definition name="Welcome" extends="BaseLayout">
+         <put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/pages/Welcome.jsp" />
+    </definition>
+   
+    
+    <definition name="LoginView" extends="BaseLayout">
+         <put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/pages/LoginView.jsp" />     
+    </definition>
+    
+    
+    <definition name="UserRegistrationView" extends="BaseLayout">
+         <put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/pages/UserRegistrationView.jsp" />   
+    </definition>
+    
+    <definition name="AddUserView1" extends="BaseLayout">
+         <put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/pages/AddUserView.jsp" />   
+    </definition>
+    
+    <definition name="UserListView1" extends="BaseLayout">
+         <put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/pages/UserListView.jsp" />   
+    </definition>
+    
+    
+    <definition name="AddBookView1" extends="BaseLayout">
+         <put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/pages/AddBookView.jsp" />   
+    </definition>
+    
+    <definition name="BookListView1" extends="BaseLayout">
+         <put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/pages/BookListView.jsp" />   
+    </definition>
+
+                  
+    </tiles-definitions>
