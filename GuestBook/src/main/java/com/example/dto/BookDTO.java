@@ -16,7 +16,8 @@ import org.hibernate.annotations.GenericGenerator;
 public class BookDTO{
 
 	
-
+      // comment added 
+	
 	@Column(name="id",unique=true,nullable=false)
     @Id
     @GenericGenerator(name="hiIncrement",strategy="increment")
